@@ -8,7 +8,7 @@ this type facade working is by checking out this repository and do the following
 * `cd scalajs-notifyjs/`
 * `sbt publish-local`
 
-This will install normally the type facade/library inside `$HOME/.ivy2/`.
+This will normally install the type facade/library inside `$HOME/.ivy2/`.
 Then, inside the project, which you want to use scalajs-notifyjs in, add the following
 to your `build.sbt`:
 
