@@ -2,17 +2,9 @@
 A minimalistic Scala.js type facade for [Notify.js](https://notifyjs.com/).
 
 ## Installation
-**I haven't uploaded this to any central repository yet!** So your best bet to get 
-this type facade working is by checking out this repository and do the following steps:
+Add the following to your `build.sbt`:
 
-* `cd scalajs-notifyjs/`
-* `sbt publish-local`
-
-This will normally install the type facade/library inside `$HOME/.ivy2/`.
-Then, inside the project, which you want to use scalajs-notifyjs in, add the following
-to your `build.sbt`:
-
-    libraryDependencies += "org.multics.baueran" %%% "scalajs-notifyjs" % "0.1-SNAPSHOT"
+    libraryDependencies += "com.github.nondeterministic" %%% "scalajs-notifyjs" % "0.1.0"
 
 You also must make sure that the project, which you want to use scalajs-notifyjs in, has
 the corresponding JavaScript libraries available. To this end, you can either include
