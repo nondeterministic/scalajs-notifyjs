@@ -1,4 +1,4 @@
-package org.multics.baueran.notifyjs
+package com.github.nondeterministic.notifyjs
 
 import org.scalajs.jquery._
 
@@ -13,7 +13,6 @@ import scala.scalajs.js.UndefOr.any2undefOrA
 @JSGlobal("$.notify")
 class notifyFn(elem: js.Any, data: js.Any, options: js.Any) extends js.Object
 
-@ScalaJSDefined
 trait Options extends js.Object {
   val clickToHide: js.UndefOr[Boolean] = js.undefined
   val autoHide: js.UndefOr[Boolean] = js.undefined

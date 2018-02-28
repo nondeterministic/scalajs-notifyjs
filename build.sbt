@@ -9,7 +9,7 @@ organization := "com.github.nondeterministic"
 name := "Scala.js notifyjs"
 normalizedName := "scalajs-notifyjs"
 
-version := "0.1.0"
+version := "0.1.1"
 
 libraryDependencies += "be.doeraene" %%% "scalajs-jquery" % "0.9.2"
 
@@ -40,3 +40,4 @@ useGpg := true
 
 isSnapshot := false
 
+scalacOptions += "-P:scalajs:sjsDefinedByDefault"
