@@ -18,6 +18,7 @@ Currently, there are basically three different use cases supported, all of which
 
 ```scala
 import org.scalajs.jquery.jQuery
+import scalatags.JsDom.all._
 import com.github.nondeterministic.notifyjs._
 
 object TutorialApp {
