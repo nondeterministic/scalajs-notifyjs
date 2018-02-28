@@ -4,7 +4,7 @@ A minimalistic Scala.js type facade for [Notify.js](https://notifyjs.com/).
 ## Installation
 Add the following to your `build.sbt`:
 
-    libraryDependencies += "com.github.nondeterministic" %%% "scalajs-notifyjs" % "0.1.0"
+    libraryDependencies += "com.github.nondeterministic" %%% "scalajs-notifyjs" % "0.1.1"
 
 You also must make sure that the project, which you want to use scalajs-notifyjs in, has
 the corresponding JavaScript libraries available. To this end, you can either include
@@ -18,7 +18,7 @@ Currently, there are basically three different use cases supported, all of which
 
 ```scala
 import org.scalajs.jquery.jQuery
-import org.multics.baueran.notifyjs._
+import com.github.nondeterministic.notifyjs._
 
 object TutorialApp {
   def main(args: Array[String]): Unit = {
