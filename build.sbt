@@ -1,15 +1,14 @@
-lazy val root = project.in(file(".")).
-	enablePlugins(ScalaJSPlugin)
+lazy val root = project.in(file(".")).enablePlugins(ScalaJSPlugin)
 
 name := "scalajs-notifyjs"
-scalaVersion := "2.12.3" // or any other Scala version >= 2.10.2
+scalaVersion := "2.12.9"
 
 organization := "com.github.nondeterministic"
 
 name := "Scala.js notifyjs"
 normalizedName := "scalajs-notifyjs"
 
-version := "0.1.1"
+version := "0.2.0"
 
 libraryDependencies += "be.doeraene" %%% "scalajs-jquery" % "0.9.2"
 
