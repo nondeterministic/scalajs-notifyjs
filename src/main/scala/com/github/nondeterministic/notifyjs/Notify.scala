@@ -5,9 +5,7 @@ import org.scalajs.jquery._
 import scala.scalajs.js
 import js.annotation.JSGlobal
 import js.annotation._
-
-import scala.scalajs.js.Any.fromString
-import scala.scalajs.js.UndefOr.any2undefOrA
+import js._
 
 @js.native
 @JSGlobal("$.notify")

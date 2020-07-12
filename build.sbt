@@ -10,7 +10,7 @@ normalizedName := "scalajs-notifyjs"
 
 version := "0.2.0"
 
-libraryDependencies += "be.doeraene" %%% "scalajs-jquery" % "0.9.2"
+libraryDependencies += "be.doeraene" %%% "scalajs-jquery" % "1.0.0"
 
 // POM settings for Sonatype
 homepage := Some(url("https://github.com/nondeterministic/scalajs-notifyjs"))
@@ -38,5 +38,3 @@ publishTo := {
 useGpg := true
 
 isSnapshot := false
-
-scalacOptions += "-P:scalajs:sjsDefinedByDefault"
