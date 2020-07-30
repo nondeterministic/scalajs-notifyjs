@@ -4,7 +4,6 @@ NEWS scalajs-notifyjs
 0.2.0  [under development]
 
 - Now supports Scala 2.13.x and ScalaJS 1.x
-- Added (rudimentary) test suite
 - Log-level (warn, info, err) is now an enum instead of a string
   (old call still works but marked as deprecated)
 

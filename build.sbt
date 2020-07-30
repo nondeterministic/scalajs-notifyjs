@@ -1,5 +1,5 @@
 lazy val root = project.in(file("."))
-  .enablePlugins(ScalaJSPlugin,JSDependenciesPlugin)
+  .enablePlugins(ScalaJSPlugin)
 
 name := "scalajs-notifyjs"
 
@@ -21,12 +21,6 @@ normalizedName := "scalajs-notifyjs"
 version := "0.2.0"
 
 libraryDependencies += "be.doeraene" %%% "scalajs-jquery" % "1.0.0"
-libraryDependencies += "com.lihaoyi" %%% "utest" % "0.7.4" % "test"
-
-testFrameworks += new TestFramework("utest.runner.Framework")
-
-jsDependencies += "org.webjars" % "jquery"   % "2.2.4" / "2.2.4/jquery.js"
-jsDependencies += "org.webjars" % "notifyjs" % "0.4.2" / "0.4.2/notify.js"
 
 // POM settings for Sonatype
 homepage := Some(url("https://github.com/nondeterministic/scalajs-notifyjs"))
