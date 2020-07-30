@@ -7,6 +7,12 @@ import js.annotation.JSGlobal
 import js.annotation._
 import js._
 
+object LogLevel extends Enumeration {
+  type LogLevel = Value
+  val Warn, Error, Info = Value
+}
+import LogLevel._
+
 @js.native
 @JSGlobal("$.notify")
 class notifyFn(elem: js.Any, data: js.Any, options: js.Any) extends js.Object
@@ -30,7 +36,14 @@ trait Options extends js.Object {
 }
 
 object Notify {
+  def apply(msg: String, logLevel: LogLevel) = {
+    new notifyFn(msg, new Options { override val className = logLevel.toString.toLowerCase }, null)
+  }
+
+  @deprecated
   def apply(msg: String, logLevel: String) = new notifyFn(msg, new Options { override val className = logLevel }, null)
+
   def apply(msg: String, options: Options) = new notifyFn(msg, options, null)
+
   def apply(elem: JQuery, msg: String, options: Options) = new notifyFn(elem, msg, options)
 }
