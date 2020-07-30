@@ -4,11 +4,11 @@ lazy val root = project.in(file("."))
 name := "scalajs-notifyjs"
 
 crossScalaVersions in ThisBuild := {
-  val allVersions = Seq("2.12.10", "2.11.12", "2.10.7", "2.13.1")
+  val allVersions = Seq("2.12.10", "2.11.12", "2.13.1")
   if (scalaJSVersion.startsWith("0.6."))
     allVersions
   else
-    allVersions.filter(!_.startsWith("2.10."))
+    allVersions.filter(!_.startsWith("2.11."))
 }
 
 scalaVersion := "2.13.1"
