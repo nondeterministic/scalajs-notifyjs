@@ -3,7 +3,7 @@ lazy val root = project.in(file("."))
 
 name := "scalajs-notifyjs"
 
-crossScalaVersions in ThisBuild := {
+crossScalaVersions := {
   val allVersions = Seq("2.12.10", "2.11.12", "2.13.1")
   if (scalaJSVersion.startsWith("0.6."))
     allVersions
@@ -45,6 +45,6 @@ publishTo := {
     Some("releases"  at nexus + "service/local/staging/deploy/maven2")
 }
 
-useGpg := true
+// useGpg := true
 
 isSnapshot := false
