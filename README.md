@@ -1,10 +1,14 @@
 # scalajs-notifyjs
-A minimalistic Scala.js type facade for [Notify.js](https://notifyjs.com/).
+A minimalistic Scala.js type facade for [Notify.js](https://notifyjs.com/) supporting both
+ScalaJS 1.0 and 0.6
 
 ## Installation
 Add the following to your `build.sbt`:
 
-    libraryDependencies += "com.github.nondeterministic" %%% "scalajs-notifyjs" % "0.1.1"
+    libraryDependencies += "com.github.nondeterministic" %%% "scalajs-notifyjs" % "0.2.0"
+
+(While the above should also work for Scala 0.6, I haven't tried it myself.  You may want
+to fall back to version `0.1.1` in case of trouble.)
 
 You also must make sure that the project, which you want to use scalajs-notifyjs in, has
 the corresponding JavaScript libraries available. To this end, you can either include
